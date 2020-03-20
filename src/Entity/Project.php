@@ -36,11 +36,6 @@ class Project
      */
     private $dateEnd;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $SkillCategory;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -90,18 +85,6 @@ class Project
     public function setDateEnd(?\DateTimeInterface $dateEnd): self
     {
         $this->dateEnd = $dateEnd;
-
-        return $this;
-    }
-
-    public function getSkillCategory(): ?string
-    {
-        return $this->SkillCategory;
-    }
-
-    public function setSkillCategory(string $SkillCategory): self
-    {
-        $this->SkillCategory = $SkillCategory;
 
         return $this;
     }
